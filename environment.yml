@@ -1,0 +1,30 @@
+name: meta-highway-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      # Core dependencies
+      - gymnasium==1.2.3
+      - numpy==2.2.6
+      - pygame==2.6.1
+      - matplotlib==3.10.8
+      - pandas==2.3.3
+      - scipy==1.15.3
+      - farama-notifications>=0.0.1
+      # Install the package itself
+      - -e .
+      # Development / testing
+      - pytest==9.0.3
+      # [optional benchmarks] Uncomment to enable JAX GPU-accelerated backend:
+      # - jax==0.4.28
+      # - jaxlib==0.4.28
+      # [optional benchmarks] Uncomment to enable meta-RL training utilities:
+      # - torch>=1.9.0
+      # - tensorboard
+      # - tqdm
+      # - scikit-learn
+      # - tianshou
+      # - wandb

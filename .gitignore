@@ -1,0 +1,117 @@
+# ── Python ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ── Virtual environments ──────────────────────────────────────────────
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ── Jupyter / IPython ─────────────────────────────────────────────────
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# ── Testing / coverage ────────────────────────────────────────────────
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.tox/
+.nox/
+htmlcov/
+
+# ── Type checkers / linters ───────────────────────────────────────────
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# ── IDEs / editors ────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Training / experiment artefacts (large, reproducible) ────────────
+results/
+results_*/
+logs/
+wandb/
+runs/
+checkpoints/
+saved_models/
+*.pkl
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.npy
+*.npz
+!highway_env/**/*.npy
+
+# ── Generated figures and datasets ────────────────────────────────────
+figures/
+output/
+*.gif
+*.mp4
+*.avi
+*.mov
+!highway_env/**/*.gif
+!README_*.gif
+
+# ── Dataset caches (reproducible from scripts) ────────────────────────
+benchmarks/datasets/
+datasets/
+dataset/
+artifacts/
+
+# ── Benchmarks (excluded from v1.0.0 release; will be published separately) ──
+benchmarks/
+
+# ── OS / misc ─────────────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+tmp/
+temp/
+
+# ── Built docs ────────────────────────────────────────────────────────
+docs/_build/
+docs/build/
+site/

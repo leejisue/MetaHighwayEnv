@@ -1,0 +1,88 @@
+[project]
+name = "meta-highway-env"
+description = "Causal meta-reinforcement learning environment for autonomous driving, built on highway-env."
+readme = "README.md"
+requires-python = ">= 3.10"
+authors = [
+    { name = "MetaHighwayEnv contributors" },
+]
+maintainers = [
+    { name = "MetaHighwayEnv contributors" },
+]
+license = { text = "MIT" }
+keywords = [
+    "reinforcement learning",
+    "meta reinforcement learning",
+    "causal inference",
+    "structural causal model",
+    "autonomous driving",
+    "highway env",
+    "jax",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "gymnasium >=0.29",
+    "farama-notifications >=0.0.1",
+    "numpy >=1.21.0",
+    "pygame >=2.0.2",
+    "matplotlib",
+    "pandas",
+    "scipy",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+testing = [
+    "pytest >=7.0",
+    "pytest-cov",
+]
+jax = [
+    "jax >=0.4.28",
+    "jaxlib >=0.4.28",
+    "flax >=0.7.0",
+    "optax >=0.1.7",
+    "chex >=0.1.80",
+]
+meta_rl = [
+    "torch >=2.0.0",
+    "tensorboard",
+    "tqdm",
+    "scikit-learn",
+]
+
+[project.entry-points."gymnasium.envs"]
+__root__ = "highway_env.__init__:register_highway_envs"
+
+[project.urls]
+Homepage = "https://github.com/brunoleej/MetaHighwayEnv"
+Repository = "https://github.com/brunoleej/MetaHighwayEnv"
+"Bug Tracker" = "https://github.com/brunoleej/MetaHighwayEnv/issues"
+"Based on" = "https://github.com/eleurent/highway-env"
+
+[tool.setuptools.dynamic]
+version = {attr = "highway_env.__version__"}
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["highway_env", "highway_env.*"]
+
+[tool.isort]
+atomic = true
+profile = "black"
+src_paths = ["highway_env", "tests", "docs/_scripts"]
+extra_standard_library = ["typing_extensions"]
+indent = 4
+lines_after_imports = 2
+multi_line_output = 3

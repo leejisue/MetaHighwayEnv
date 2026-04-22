@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+title: >-
+  MetaHighwayEnv: A Causal Meta-Reinforcement Learning Environment
+  for Autonomous Driving
+message: >-
+  If you use MetaHighwayEnv in your research, please cite both this
+  repository and the upstream highway-env project it is built on.
+type: software
+version: "1.0.0"
+date-released: "2026-04-22"
+authors:
+  - name: MetaHighwayEnv contributors
+repository-code: "https://github.com/brunoleej/MetaHighwayEnv"
+abstract: >-
+  MetaHighwayEnv is a causal meta-reinforcement learning benchmark
+  for autonomous driving that extends highway-env with structural
+  causal models, JAX-accelerated environments, and out-of-distribution
+  task distributions for testing causal generalization.
+license: MIT
+keywords:
+  - reinforcement learning
+  - meta reinforcement learning
+  - causal inference
+  - structural causal model
+  - autonomous driving
+  - highway env
+  - JAX
+
+references:
+  - type: software
+    title: "highway-env"
+    authors:
+      - family-names: Leurent
+        given-names: Edouard
+        email: eleurent@gmail.com
+    year: 2018
+    url: "https://github.com/eleurent/highway-env"
+    notes: >-
+      MetaHighwayEnv is built as a meta-RL and causal-inference extension
+      of highway-env. The original highway-env package provides the
+      underlying simulator, vehicle kinematics (IDM/MOBIL), and road
+      topologies that MetaHighwayEnv re-uses and extends.
