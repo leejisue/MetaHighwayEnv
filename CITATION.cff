@@ -10,7 +10,7 @@ version: "1.0.0"
 date-released: "2026-04-22"
 authors:
   - name: MetaHighwayEnv contributors
-repository-code: "https://github.com/brunoleej/MetaHighwayEnv"
+repository-code: "https://github.com/leejisue/MetaHighwayEnv"
 abstract: >-
   MetaHighwayEnv is a causal meta-reinforcement learning benchmark
   for autonomous driving that extends highway-env with structural
