@@ -1197,7 +1197,7 @@ GitHub's citation widget.
   title        = {An Environment for Autonomous Driving Decision-Making},
   year         = {2018},
   publisher    = {GitHub},
-  howpublished = {\url{https://github.com/eleurent/highway-env}},
+  howpublished = {\url{https://github.com/Farama-Foundation/HighwayEnv}},
 }
 ```
 
