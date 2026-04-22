@@ -1188,7 +1188,7 @@ GitHub's citation widget.
                    Environment for Autonomous Driving},
   author       = {{MetaHighwayEnv contributors}},
   year         = {2025},
-  howpublished = {\url{https://github.com/brunoleej/MetaHighwayEnv}},
+  howpublished = {\url{https://github.com/leejisue/MetaHighwayEnv}},
   note         = {Built on highway-env by Edouard Leurent.}
 }
 
