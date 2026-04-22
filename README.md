@@ -1186,7 +1186,7 @@ GitHub's citation widget.
 @misc{metahighwayenv2025,
   title        = {{MetaHighwayEnv}: A Causal Meta-Reinforcement Learning
                    Environment for Autonomous Driving},
-  author       = {{MetaHighwayEnv contributors}},
+  author       = {{Jisu Lee}},
   year         = {2025},
   howpublished = {\url{https://github.com/leejisue/MetaHighwayEnv}},
   note         = {Built on highway-env by Edouard Leurent.}
