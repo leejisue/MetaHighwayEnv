@@ -1183,11 +1183,11 @@ ready-to-use `CITATION.cff` is provided at the repository root for
 GitHub's citation widget.
 
 ```bibtex
-@misc{metahighwayenv2025,
+@misc{metahighwayenv2026,
   title        = {{MetaHighwayEnv}: A Causal Meta-Reinforcement Learning
                    Environment for Autonomous Driving},
   author       = {{Jisu Lee}},
-  year         = {2025},
+  year         = {2026},
   howpublished = {\url{https://github.com/leejisue/MetaHighwayEnv}},
   note         = {Built on highway-env by Edouard Leurent.}
 }
